@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+}
+
+/* Utility class */
+
+.cursor{
+    cursor: pointer;;
+}
+
+p,div{
+    margin: 0;
+}
+
+.dog-post{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* The Dog profile container and app logo... style start */
+
+.dog-info-container{
+    display: flex;
+    justify-content: space-between;
+    padding:  1.2rem 1.75rem;
+    align-items: baseline;
+}
+
+.user-img,.dog-chat{
+    width: 2.2rem;
+}
+
+.app-logo{
+    width: 5.25rem;
+}
+
+/* The Dog profile container and app logo... end */
+/* The dog posts , info and captions ... style ..start */
+
+.dog-photo{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.dog-post-photo{
+    width: 100%;
+    aspect-ratio: 2/3;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.dog-info{
+    position: absolute;
+    bottom: 2rem;
+    top: auto;
+    left: 2rem;
+    right: auto;
+    width: 70%;
+}
+
+
+.post-user-info{
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.post-caption{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* The dog posts , info and captions ... style ..end */
+/* The dog posts like and dislike section ... style ..start */
+
+.dog-post-engagement{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding:  1.5rem 0.67rem;
+    margin: 0 auto;
+}
+
+.post-dislike,.post-like{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(126, 118, 118);
+}
+
+/* hover effect  */
+
+.post-dislike:hover,.post-like:hover{
+    transition: ease-out;
+    transition-duration: 0.5s;
+    box-shadow:none;
+}
+
+.post-dislike:hover{
+    background-color: rgb(227, 182, 182);
+}
+
+.post-like:hover{
+    background-color: rgb(193, 232, 203);
+}
+
+/* Badge */
+
+.status-badge-nope,.status-badge-like{
+    display: none;
+    position: absolute;
+    width: 10rem;
+    margin-bottom: auto;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    transform: rotate(-35deg);
+}
+
+.display{
+    display: flex;
+}
+
+.end-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    height: 600px;
+    gap: 2rem;
+}
+
+.logo{
+    width: 15rem;
+}
+
+.app-name{
+    font-size: 4rem;
+    font-family: 'Sevillana', cursive;
+
+}
+
+.descrpt{
+    font-size: 2rem;
+    color: gray;
+}
+
+.material-symbols-outlined{
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 10rem;
+    bottom: 10rem;
+    font-weight: bold;
+    color: black;
+    font-size: 10rem;
+    cursor: pointer;
+}
